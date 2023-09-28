@@ -1,0 +1,46 @@
+<mat-card>
+
+    <mat-card-content>
+  
+      <mat-action-list>
+  
+        <div mat-subheader>Available categories</div>
+  
+       
+
+        <button mat-list-item  routerLink="/user-dashboard/0" class="custom-button">
+          <div class="button-content">
+
+            <mat-icon mat-list-icon>quiz</mat-icon> 
+            <span class="button-text">All quizzes</span>
+          </div>
+        </button>
+  
+        <!-- Profile -->
+        <button 
+        [routerLink]="'/user-dashboard/'+c.cid"
+        mat-list-item *ngFor="let c of categories" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>quiz</mat-icon> 
+            <span class="button-text">{{c.title}}</span>
+          </div>
+        </button>
+
+   
+  
+        
+  
+        <!-- Logout -->
+        <button mat-list-item routerLink="/admin/profile" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>logout</mat-icon>
+            <span class="button-text">Logout</span>
+          </div>
+        </button>
+  
+      </mat-action-list>
+    </mat-card-content>
+  
+  </mat-card>
+  
+  <!-- {{categories|json}} -->

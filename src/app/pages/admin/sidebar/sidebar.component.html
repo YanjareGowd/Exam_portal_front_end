@@ -1,0 +1,69 @@
+<mat-card>
+
+    <mat-card-content>
+  
+      <mat-action-list>
+  
+        <div mat-subheader>Menu</div>
+  
+        <!-- home -->
+        <button mat-list-item routerLink="/admin" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>home</mat-icon>
+            <span class="button-text">Home</span>
+          </div>
+        </button>
+  
+        <!-- Profile -->
+        <button mat-list-item routerLink="/admin/profile" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>account_circle</mat-icon>
+            <span class="button-text">Profile</span>
+          </div>
+        </button>
+  
+        <!-- Categories -->
+        <button mat-list-item routerLink="/admin/categories" class="custom-button">
+          <div class="button-content">
+            <mat-icon >list</mat-icon>
+            <span class="button-text">Categories</span>
+          </div>
+        </button>
+  
+        <!-- Add Categories -->
+        <button mat-list-item routerLink="/admin/add-category" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>add_circle_outline</mat-icon>
+            <span class="button-text">Add Categories</span>
+          </div>
+        </button>
+  
+        <!-- Quizzes -->
+        <button mat-list-item routerLink="/admin/quizzes" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>quiz</mat-icon>
+            <span class="button-text">Quizzes</span>
+          </div>
+        </button>
+  
+        <!-- Add Quizzes -->
+        <button mat-list-item routerLink="/admin/add-quiz" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>add</mat-icon>
+            <span class="button-text">Add Quiz</span>
+          </div>
+        </button>
+  
+        <!-- Logout -->
+        <button mat-list-item routerLink="/admin/profile" class="custom-button">
+          <div class="button-content">
+            <mat-icon mat-list-icon>logout</mat-icon>
+            <span class="button-text">Logout</span>
+          </div>
+        </button>
+  
+      </mat-action-list>
+    </mat-card-content>
+  
+  </mat-card>
+  

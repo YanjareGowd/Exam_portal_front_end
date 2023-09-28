@@ -1,0 +1,71 @@
+<mat-card *ngIf="user">
+  
+  <mat-card-content><h2>Your Profile Details</h2></mat-card-content>
+  <!-- {{user | json}} -->
+    <mat-card-content>
+     
+      <div class="bootstarp-wrapper">
+
+        <div class="container">
+
+          <div class="container text-center ">
+            <img 
+            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAIAAgAMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAABQYHAwEE/8QANhAAAgIBAgIFCQcFAAAAAAAAAAECAwQFESExBkFRcZESMjRhcoGhsdETFCIjQlLhJENiksH/xAAZAQEBAQEBAQAAAAAAAAAAAAAAAwQCAQX/xAAgEQEAAgIDAAIDAAAAAAAAAAAAAQIEEQMhQTFREiIy/9oADAMBAAIRAxEAPwC8AA+6+aAAAAAAAAAAAAAAAAAAAAAAAAAAACF1LX6seTqxY/bWJ7OX6V9SHt1zULJNq/yF2QikVrwXtG3M2iFyBTK9c1Gtpu9TXZOCZNadr9OTJV5MVTY+T3/C/oLcN69kXiUyACToAAAAAAAAAAAgekuoyqisOmTUpreyS5pdhPFCz7nkZ19r67Ht3dXwLcFPyt345vOocAAb0QAAWbo3qMrU8O6TcoreuT5tdnuJ4oeBa6M6i1fpmt+7r+BfDBz0/G3S1J3AACLoAAAAAAAAM+vg68i2D5xnJPxNBKn0kwnj5n3iK/Lv490uv6+Jox7RFtfbi8dIcAG1IAAHSiLsvqgucppLxNAKl0awnfm/eJL8unjv2y6vr4FtMWTaJtpWkdAAM7sAAAAAAAAOWTj1ZVEqbo+VCXwOoApuo6Nk4cnKEXdT1TiuK70Ru5ohwtxMW17249U32uKNNciY/qHE0+lC3JLTtGycySlOMqaeuclxfci11YmNU96seqL7VBHc8tkzMfqRxuWNj14tMaaIqMI8vX6zqAZ3YAAAAAAAAAQeu6y8aTxcRr7Xb8c/2+pes9rWbTqCZ0kszUMXCX9Raoy6orjJ+4hsnpNLfbFx17Vj/wCL6lfnKU5OU5OUnzbe7Z4bK49Y+e0pvPiSt1zUbHwuUF2Rij53qWdLnl3e6Wx8oLRx1jxzuX1R1LOjyy7v9tzvXrmo1/3/AC1/nFMjgJpWfDcp/H6TWLhk48ZLtrez8GTOFqeJm8KbV5f7JcJfyUcLg902muK2JWx6z8dOovMNEBXtC1qU5xxcyW8pcK7H1vsZYTHek0nUqROwAHL0AAHjeyb7DPpzlZOVk3vKTcm/WzQZ+ZLuM8XI1YvqfIAA1pgAAAAAAAG7XFNprimjQaZOdMJvnKKb8DPZcmaDjejVexH5GTK8U43QAGVQAAHk/Ml3GeI0OfmS7jPEasX1Pk8AAa0wAAAAAAAHkuTNBxvRqvYj8jPpcmaDjejVexH5GXK8U43QAGRR/9k=" 
+            alt=""
+            class="profile-image"
+            />
+
+            <h2 class="mt20">{{user.firstName}} {{user.lastName}}</h2>
+          </div>
+
+         
+
+          <div class="row">
+
+         <div class="col-md-10" offset-md-1>
+
+          <table class="table text-center ">
+
+            <tr>
+              <td>Username</td>
+              <td>{{ user.username }}</td>
+            </tr>
+
+            <tr>
+              <td>Userid</td>
+              <td>EXAM{{ user.id }}</td>
+            </tr>
+
+            <tr>
+              <td>Phone Number</td>
+              <td>{{user.phoneNumber}}</td>
+            </tr>
+
+            <tr>
+              <td>ROLE</td>
+              <td>{{user.authorities[0].authority}}</td>
+            </tr>
+
+            <tr>
+              <td>Status</td>
+              <td>{{user.enabled?"ACTIVE":"INACTIVE"}}</td>
+            </tr>
+
+          </table>
+         </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+      
+
+    </mat-card-content>
+    <mat-card-actions class="buttons">
+      <button mat-raised-button color="primary" class="mr20">UPDATE</button>
+      <button mat-raised-button color="accent">SHARE</button>
+    </mat-card-actions>
+  </mat-card>

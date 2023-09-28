@@ -1,0 +1,27 @@
+.custom-button {
+    /* Display the button as a flex container to align its content horizontally */
+    display: flex;
+    align-items: center; /* Align content vertically in the center */
+    padding: 10px; /* Add padding to the button */
+  /*  border: 1px solid #ccc; /* Add a border to the button */
+   /* border-radius: 5px; /* Apply rounded corners to the button */
+  /*  background-color: #f5f5f5; /* Set the background color of the button */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+    text-decoration: none; /* Remove default link underline */
+  }
+  
+  .button-content {
+    /* Display the icon and text as a flex container to align them horizontally */
+    display: flex;
+    align-items: center; /* Align content vertically in the center */
+  }
+  
+  .mat-icon {
+    align-self: auto;
+    margin-right: 10px; /* Add right margin to the icon for spacing */
+  }
+  
+  .button-text {
+    font-size: 16px; /* Set the font size for the text */
+  }
+  

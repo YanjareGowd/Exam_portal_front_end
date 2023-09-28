@@ -1,0 +1,13 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+
+  #smallButton {
+  
+    font-size: 18px; /* Adjust the font size as needed */
+    padding: 5px; /* Adjust padding as needed to control internal spacing */
+    margin: 2px; /* Adjust margin as needed to control external spacing */
+    margin-bottom: 0%;
+  }
+  
+  
